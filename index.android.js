@@ -1,11 +1,13 @@
 // Index for android
-
 // Import a libaray to create a component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { AppRegistry } from 'react-native';
+import Header from './src/components/header';
 
 // create a component
-const App = () => (<Text>This is a Testt</Text>)
+const App = () => (
+  <Header headerText={'Albums!'} />
+)
 
 // Render it to device
 AppRegistry.registerComponent('albums', ()=> App);
